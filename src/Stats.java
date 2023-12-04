@@ -7,17 +7,17 @@ public class Stats {
     public Stats() {
         Dice threeD6 = new Dice(6);
 
-        strength=threeD6.rollDice(3);
-        agility=threeD6.rollDice(3);
-        intelligence=threeD6.rollDice(3);
-        constitution=threeD6.rollDice(3);
+        strength = threeD6.rollDice(3);
+        agility = threeD6.rollDice(3);
+        intelligence = threeD6.rollDice(3);
+        constitution = threeD6.rollDice(3);
     }
 
-    public void setStats(int strength,int agility,int intelligence,int constitution){
-        this.strength=strength;
-        this.agility=agility;
-        this.intelligence=intelligence;
-        this.constitution=constitution;
+    public void setStats(int strength, int agility, int intelligence, int constitution) {
+        this.strength = strength;
+        this.agility = agility;
+        this.intelligence = intelligence;
+        this.constitution = constitution;
     }
 
     public void setStrength(int strength) {
@@ -36,23 +36,23 @@ public class Stats {
         this.constitution = constitution;
     }
 
-    public void raiseStrength(int raise){
-        strength+=raise;
+    public void raiseStrength(int raise) {
+        strength += raise;
     }
 
-    public void raiseAgility(int raise){
-        agility+=raise;
+    public void raiseAgility(int raise) {
+        agility += raise;
     }
 
-    public void raiseIntelligence(int raise){
-        intelligence+=raise;
+    public void raiseIntelligence(int raise) {
+        intelligence += raise;
     }
 
-    public void raiseConstitution(int raise){
-        constitution+=raise;
+    public void raiseConstitution(int raise) {
+        constitution += raise;
     }
 
-    public int getStrength(){
+    public int getStrength() {
         return strength;
     }
 
@@ -68,12 +68,12 @@ public class Stats {
         return constitution;
     }
 
-    public void printStats(){
+    public void printStats() {
         System.out.println(
-                "Strength: "+strength+"\n"+
-                        "agility: "+agility+"\n"+
-                        "intelligence: "+intelligence+"\n"+
-                        "constitution: "+constitution
+                        "Strength: " + strength + "\n" +
+                        "agility: " + agility + "\n" +
+                        "intelligence: " + intelligence + "\n" +
+                        "constitution: " + constitution
         );
     }
 }
