@@ -13,7 +13,7 @@ public class Dice {
         int totalRoll=0;
         for (int i = 0; i < diceCount; i++) {
             int dieRoll = randomGen.nextInt(sides) + 1;
-            System.out.println(dieRoll);
+            //System.out.println(dieRoll);
             totalRoll+=dieRoll;
         }
         return totalRoll;
