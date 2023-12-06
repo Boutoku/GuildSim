@@ -6,13 +6,14 @@ public class Test {
 
         Stats s = new Stats();
         s.printStats();
+        */
 
         Human h = new Human();
         h.printHuman();
 
         Elf e = new Elf();
         e.printElf();
-        */
+
         Dwarf d = new Dwarf();
         d.printDwarf();
     }

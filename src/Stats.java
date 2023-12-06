@@ -1,6 +1,6 @@
 public class Stats {
     private int strength;
-    private int agility;
+    private int dexterity;
     private int intelligence;
     private int constitution;
 
@@ -8,14 +8,14 @@ public class Stats {
         Dice threeD6 = new Dice(6);
 
         strength = threeD6.rollDice(3);
-        agility = threeD6.rollDice(3);
+        dexterity = threeD6.rollDice(3);
         intelligence = threeD6.rollDice(3);
         constitution = threeD6.rollDice(3);
     }
 
-    public void setStats(int strength, int agility, int intelligence, int constitution) {
+    public void setStats(int strength, int dexterity, int intelligence, int constitution) {
         this.strength = strength;
-        this.agility = agility;
+        this.dexterity = dexterity;
         this.intelligence = intelligence;
         this.constitution = constitution;
     }
@@ -24,8 +24,8 @@ public class Stats {
         this.strength = strength;
     }
 
-    public void setAgility(int agility) {
-        this.agility = agility;
+    public void setAgility(int dexterity) {
+        this.dexterity = dexterity;
     }
 
     public void setIntelligence(int intelligence) {
@@ -40,8 +40,8 @@ public class Stats {
         strength += raise;
     }
 
-    public void raiseAgility(int raise) {
-        agility += raise;
+    public void raiseDexterity(int raise) {
+        dexterity += raise;
     }
 
     public void raiseIntelligence(int raise) {
@@ -56,8 +56,8 @@ public class Stats {
         return strength;
     }
 
-    public int getAgility() {
-        return agility;
+    public int getDexterity() {
+        return dexterity;
     }
 
     public int getIntelligence() {
@@ -71,9 +71,9 @@ public class Stats {
     public void printStats() {
         System.out.println(
                         "Strength: " + strength + "\n" +
-                        "agility: " + agility + "\n" +
-                        "intelligence: " + intelligence + "\n" +
-                        "constitution: " + constitution
+                        "Dexterity: " + dexterity + "\n" +
+                        "Intelligence: " + intelligence + "\n" +
+                        "Constitution: " + constitution
         );
     }
 }

@@ -1,6 +1,6 @@
 public class Human {
-    String name;
-    Stats humanStats;
+    private String name;
+    private Stats humanStats;
 
     //Creates a human
     public Human() {
@@ -13,7 +13,7 @@ public class Human {
     //Raises STR,AGI,CON with 1
     private void humanTrait() {
         humanStats.raiseStrength(1);
-        humanStats.raiseAgility(1);
+        humanStats.raiseDexterity(1);
         humanStats.raiseIntelligence(1);
     }
 
@@ -23,7 +23,7 @@ public class Human {
     }
 
     public int getAgility() {
-        return humanStats.getAgility();
+        return humanStats.getDexterity();
     }
 
     public int getIntelligence() {
@@ -39,15 +39,15 @@ public class Human {
         System.out.println(
                 "Name: " + name + "\n" +
                         "Strength: " + humanStats.getStrength() + "\n" +
-                        "Agility: " + humanStats.getAgility() + "\n" +
+                        "Dexterity: " + humanStats.getDexterity() + "\n" +
                         "Intelligence: " + humanStats.getIntelligence() + "\n" +
                         "Constitution: " + humanStats.getConstitution());
     }
 
     //    Returns human info
     public String getHuman() {
-        return "Strength: " + humanStats.getStrength() +
-                ",Agility: " + humanStats.getAgility() +
+        return  "Strength: " + humanStats.getStrength() +
+                ",Dexterity: " + humanStats.getDexterity() +
                 ",Intelligence: " + humanStats.getIntelligence() +
                 ",Constitution: " + humanStats.getConstitution();
     }

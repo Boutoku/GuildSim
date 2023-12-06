@@ -1,7 +1,10 @@
 public class Adventurer {
-    Human human;
-    Dwarf dwarf;
-    Elf elf;
+    private Human human;
+    private Dwarf dwarf;
+    private Elf elf;
+    private int lvl = 1;
+    private int exp = 0;
+
 
 
 }

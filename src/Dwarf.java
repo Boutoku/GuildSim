@@ -1,6 +1,6 @@
 public class Dwarf {
-    String name;
-    Stats dwarfStats;
+    private String name;
+    private Stats dwarfStats;
     public Dwarf(){
         NameGen name = new NameGen();
         this.name = name.createDwarf();
@@ -16,7 +16,7 @@ public class Dwarf {
     }
 
     public int getAgility(){
-        return dwarfStats.getAgility();
+        return dwarfStats.getDexterity();
     }
 
     public int getIntelligence() {
@@ -30,7 +30,7 @@ public class Dwarf {
         System.out.println(
                         "Name: " + name + "\n" +
                         "Strength: " + dwarfStats.getStrength() + "\n" +
-                        "Agility: " + dwarfStats.getAgility() + "\n" +
+                        "Dexterity: " + dwarfStats.getDexterity() + "\n" +
                         "Intelligence: " + dwarfStats.getIntelligence() + "\n" +
                         "Constitution: " + dwarfStats.getConstitution());
     }
