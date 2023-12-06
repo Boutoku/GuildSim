@@ -11,6 +11,9 @@ public class Elf {
         elfStats.raiseDexterity(1);
         elfStats.raiseIntelligence(2);
     }
+    public String getName(){
+        return name;
+    }
     public int getStrength(){
         return elfStats.getStrength();
     }

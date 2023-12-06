@@ -18,6 +18,8 @@ public class Human {
     }
 
     //Getters
+    public String getName(){ return name; }
+
     public int getStrength() {
         return humanStats.getStrength();
     }

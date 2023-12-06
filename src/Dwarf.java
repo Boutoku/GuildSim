@@ -11,6 +11,9 @@ public class Dwarf {
         dwarfStats.raiseConstitution(1);
         dwarfStats.raiseStrength(2);
     }
+    public String getName(){
+        return name;
+    }
     public int getStrength(){
         return dwarfStats.getStrength();
     }
