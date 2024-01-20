@@ -82,6 +82,28 @@ public class NameGen {
             "Steelbeard", "Silveranvil", "Stonecleaver", "Bronzeanvil", "Steelcleaver", "Ironhammer", "Goldenshaper", "Bronzehand", "Stonesmith", "Graniteforge"
 
     };
+    public static final String[] ORC_FIRSTNAMES = {
+            "Groth",   "Gruk",    "Nazar",  "Drog",   "Throk",  "Drak",   "Morg",    "Grak",    "Zog",     "Gorn",
+            "Krug",    "Snag",    "Grish",  "Uruk",   "Thrak",  "Hrak",   "Lok",     "Brak",    "Krog",    "Vorak",
+            "Grom",    "Ugar",    "Drub",   "Hrok",   "Krag",   "Razak",  "Urg",     "Norok",   "Grunk",   "Druk",
+            "Narok",   "Murg",    "Vorn",   "Skrag",  "Gnar",   "Hurak",  "Snarl",   "Darnak",  "Gulok",   "Zorn",
+            "Brunk",   "Thrug",   "Narg",   "Ruk",    "Trak",   "Draz",   "Gruul",   "Grol",    "Snagok",  "Gornak",
+            "Krunk",   "Zark",    "Grag",   "Thruk",  "Krunar", "Zornak", "Snurk",   "Hraknar", "Zarnak",  "Brurn",
+            "Kurug",   "Snar",    "Gruum",  "Lornak", "Skruk",  "Grar",   "Draznar", "Krarn",   "Drarn",   "Kruul",
+            "Grunkar", "Druum",   "Zarn",   "Dralk",  "Hrnak",  "Gral",   "Krol",    "Snork",   "Grarn",   "Ghrak",
+            "Dornak",  "Grukash", "Thrunk", "Zulok",  "Gurnak", "Grash",  "Thrun",   "Grulk",   "Gromar",  "Krash",
+            "Brunkar", "Snarg",   "Thrag",  "Durak",  "Krar",   "Skar",   "Durnak",  "Zrak",    "Snorkar", "Grum"};
+    public static final String[] ORC_SURNAMES = {
+            "Skullcrusher",  "Ironhide",    "Bloodaxe",     "Darkblade",    "Doomhammer",    "Bonecrusher", "Gorefang",      "Blackfang",    "Shadowmaw",     "Grimskull",
+            "Warstrike",     "Battlefury",  "Blackhand",    "Ironskull",    "Rageshadow",    "Deathblade",  "Skullsplitter", "Stormrage",    "Thunderstrike", "Nightfang",
+            "Ironfist",      "Ragemaw",     "Steelheart",   "Deathgrip",    "Frostwolf",     "Rocksmasher", "Flamebringer",  "Grimjaw",      "Shadowblade",   "Stormreaver",
+            "Thunderfist",   "Grimhand",    "Blazefury",    "Stormgrip",    "Stonecrusher",  "Thunderfury", "Frostgore",     "Ironjaw",      "Ragemaw",       "Blackmaw",
+            "Grimheart",     "Shadowfury",  "Thundermaw",   "Frostcrusher", "Grimskull",     "Deathgaze",   "Flameheart",    "Thunderheart", "Ironrage",      "Shadowrage",
+            "Frostfist",     "Rageshadow",  "Thunderblade", "Deathhand",    "Shadowfist",    "Steelrage",   "Stormheart",    "Grimfury",     "Doomgrip",      "Frostblade",
+            "Shadowgore",    "Bloodrage",   "Stormgore",    "Blackheart",   "Frostjaw",      "Thundergore", "Darkfury",      "Deathstrike",  "Rageshadow",    "Stoneheart",
+            "Thunderstrike", "Flameblade",  "Grimstrike",   "Ironblade",    "Shadowcrusher", "Froststrike", "Thunderjaw",    "Deathmaw",     "Grimfist",      "Ironstrike",
+            "Skullfury",     "Blackstrike", "Shadowhand",   "Frostgaze",    "Thundermaw",    "Doomfang",    "Warblood",      "Fireaxe",      "Grimshield",    "Skullsplitter",
+            "Bonecrusher",   "Shadowrage",  "Goreblade",    "Ironmaw",      "Rageheart",     "Thunderfang", "Stormcrusher",  "Frostbiter",   "Deathgrip",     "Darkfist"};
     Random nameGen= new Random();
 
     public String createHuman(){
@@ -97,6 +119,11 @@ public class NameGen {
     public String createDwarf(){
         String randomDwarfName = DWARF_FIRSTNAMES[nameGen.nextInt(DWARF_FIRSTNAMES.length)]
                 + " " + DWARF_SURNAMES[nameGen.nextInt(ELF_SURNAMES.length)];
+        return randomDwarfName;
+    }
+    public String createOrc(){
+        String randomDwarfName = ORC_FIRSTNAMES[nameGen.nextInt(ORC_FIRSTNAMES.length)]
+                + " " + ORC_SURNAMES[nameGen.nextInt(ORC_SURNAMES.length)];
         return randomDwarfName;
     }
 }

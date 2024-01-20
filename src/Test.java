@@ -1,12 +1,14 @@
 public class Test {
     public static void main(String[] args) {
-        /*
-        Dice d =new Dice(6);
-        d.rollDice(3);
 
-        Stats s = new Stats();
-        s.printStats();
-        */
+        /*Dice d =new Dice(20);
+        d.rollDice(5);*/
+
+
+        /*Stats s = new Stats();
+        s.printStats();*/
+
+
 
         Human h = new Human();
         h.printHuman();
@@ -14,7 +16,10 @@ public class Test {
         Elf e = new Elf();
         e.printElf();
 
-        Dwarf d = new Dwarf();
-        d.printDwarf();
+        Dwarf dw = new Dwarf();
+        dw.printDwarf();
+
+        Orc o = new Orc();
+        o.printOrc();
     }
 }
