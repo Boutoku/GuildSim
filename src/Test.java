@@ -1,23 +1,26 @@
 public class Test {
     public static void main(String[] args) {
 
-        /*Dice d =new Dice(20);
-        d.rollDice(5);*/
+        /* Dice Test
+        /  Dice d =new Dice(20);
+        /  d.rollDice(5); */
 
+        /* Stats Test
+        /  Stats s = new Stats();
+        /  s.printStats(); */
 
-        /*Stats s = new Stats();
-        s.printStats();*/
-
-
-
+        //Race Test
         Human h = new Human();
         h.printHuman();
+        System.out.println("\n");
 
         Elf e = new Elf();
         e.printElf();
+        System.out.println("\n");
 
-        Dwarf dw = new Dwarf();
-        dw.printDwarf();
+        Dwarf d = new Dwarf();
+        d.printDwarf();
+        System.out.println("\n");
 
         Orc o = new Orc();
         o.printOrc();

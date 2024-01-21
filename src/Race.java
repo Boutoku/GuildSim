@@ -9,21 +9,10 @@ public class Race {
         return "";
     }
 
-    public int getStrength() {
-        return stats.getStrength();
-    }
-
-    public int getDexterity() {
-        return stats.getDexterity();
-    }
-
-    public int getIntelligence() {
-        return stats.getIntelligence();
-    }
-
-    public int getConstitution() {
-        return stats.getConstitution();
-    }
+    public int getStrength() { return stats.getStrength(); }
+    public int getDexterity() { return stats.getDexterity(); }
+    public int getIntelligence() { return stats.getIntelligence(); }
+    public int getConstitution() { return stats.getConstitution(); }
 
     public void printCharSheet() {
         System.out.println(

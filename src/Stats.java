@@ -5,21 +5,32 @@ public class Stats {
     private int constitution;
 
     public Stats() {
-        Dice threeD6 = new Dice(6);
+        strength = rollStat();
+        dexterity = rollStat();
+        intelligence = rollStat();
+        constitution = rollStat();
+    }
 
-        strength = threeD6.rollDice(3);
-        dexterity = threeD6.rollDice(3);
-        intelligence = threeD6.rollDice(3);
-        constitution = threeD6.rollDice(3);
+    // Rolls for one stat while making sure it's never lower than 8
+    public int rollStat() {
+        int stat;
+        Dice d6 = new Dice(6);
+        stat = d6.rollDice(3);
+        if (stat < 8) {
+            stat = 8;
+        }
+        return stat;
     }
 
     //Setters
+    //region
     public void setStats(int strength, int dexterity, int intelligence, int constitution) {
         this.strength = strength;
         this.dexterity = dexterity;
         this.intelligence = intelligence;
         this.constitution = constitution;
     }
+
     public void setStrength(int strength) {
         this.strength = strength;
     }
@@ -32,8 +43,10 @@ public class Stats {
     public void setConstitution(int constitution) {
         this.constitution = constitution;
     }
+    //endregion
 
     //Raise and lower stats
+    //region
     public void raiseStrength(int raise) {
         strength += raise;
     }
@@ -59,8 +72,10 @@ public class Stats {
     public void lowerIntelligence(int lower) {
         intelligence -= lower;
     }
+    //endregion
 
     //Getters
+    //region
     public int getStrength() {
         return strength;
     }
@@ -73,10 +88,11 @@ public class Stats {
     public int getConstitution() {
         return constitution;
     }
+    //endregion
 
     public String toString() {
-        return "Strength: " + strength + "\n" +
-                "Dexterity: " + dexterity + "\n" +
+        return "Strength: "      + strength     + "\n" +
+                "Dexterity: "    + dexterity    + "\n" +
                 "Intelligence: " + intelligence + "\n" +
                 "Constitution: " + constitution;
     }
