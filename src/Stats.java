@@ -91,7 +91,7 @@ public class Stats {
     //endregion
 
     public String toString() {
-        return "Strength: "      + strength     + "\n" +
+        return  "Strength: "     + strength     + "\n" +
                 "Dexterity: "    + dexterity    + "\n" +
                 "Intelligence: " + intelligence + "\n" +
                 "Constitution: " + constitution;

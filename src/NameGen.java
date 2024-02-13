@@ -92,7 +92,8 @@ public class NameGen {
             "Kurug",   "Snar",    "Gruum",  "Lornak", "Skruk",  "Grar",   "Draznar", "Krarn",   "Drarn",   "Kruul",
             "Grunkar", "Druum",   "Zarn",   "Dralk",  "Hrnak",  "Gral",   "Krol",    "Snork",   "Grarn",   "Ghrak",
             "Dornak",  "Grukash", "Thrunk", "Zulok",  "Gurnak", "Grash",  "Thrun",   "Grulk",   "Gromar",  "Krash",
-            "Brunkar", "Snarg",   "Thrag",  "Durak",  "Krar",   "Skar",   "Durnak",  "Zrak",    "Snorkar", "Grum"};
+            "Brunkar", "Snarg",   "Thrag",  "Durak",  "Krar",   "Skar",   "Durnak",  "Zrak",    "Snorkar", "Grum"
+    };
     public static final String[] ORC_SURNAMES = {
             "Skullcrusher",  "Ironhide",    "Bloodaxe",     "Darkblade",    "Doomhammer",    "Bonecrusher", "Gorefang",      "Blackfang",    "Shadowmaw",     "Grimskull",
             "Warstrike",     "Battlefury",  "Blackhand",    "Ironskull",    "Rageshadow",    "Deathblade",  "Skullsplitter", "Stormrage",    "Thunderstrike", "Nightfang",
@@ -103,7 +104,8 @@ public class NameGen {
             "Shadowgore",    "Bloodrage",   "Stormgore",    "Blackheart",   "Frostjaw",      "Thundergore", "Darkfury",      "Deathstrike",  "Rageshadow",    "Stoneheart",
             "Thunderstrike", "Flameblade",  "Grimstrike",   "Ironblade",    "Shadowcrusher", "Froststrike", "Thunderjaw",    "Deathmaw",     "Grimfist",      "Ironstrike",
             "Skullfury",     "Blackstrike", "Shadowhand",   "Frostgaze",    "Thundermaw",    "Doomfang",    "Warblood",      "Fireaxe",      "Grimshield",    "Skullsplitter",
-            "Bonecrusher",   "Shadowrage",  "Goreblade",    "Ironmaw",      "Rageheart",     "Thunderfang", "Stormcrusher",  "Frostbiter",   "Deathgrip",     "Darkfist"};
+            "Bonecrusher",   "Shadowrage",  "Goreblade",    "Ironmaw",      "Rageheart",     "Thunderfang", "Stormcrusher",  "Frostbiter",   "Deathgrip",     "Darkfist"
+    };
     Random nameGen= new Random();
 
     public String createHuman(){

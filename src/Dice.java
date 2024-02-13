@@ -18,5 +18,6 @@ public class Dice {
         }
         return totalRoll;
     }
+    //testpush
 
 }
